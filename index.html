@@ -2,196 +2,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Yarn Atelier | Crochet Patterns</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Yarn Atelier | Crochet Patterns</title>
 
-    body {
-      font-family: Georgia, serif;
-      background: #fbf7f1;
-      color: #594437;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    header {
-      background: #f1e6d9;
-      padding: 22px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
+body {
+  font-family: Georgia, serif;
+  background: #fbf7f1;
+  color: #594437;
+}
 
-    .logo {
-      font-size: 27px;
-      font-style: italic;
-      font-weight: bold;
-    }
+header {
+  background: #f1e6d9;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-    nav a {
-      color: #594437;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 14px;
-    }
+.logo {
+  font-size: 27px;
+  font-style: italic;
+  font-weight: bold;
+}
 
-    .hero {
-      text-align: center;
-      padding: 85px 20px;
-      background: #ead5cf;
-    }
+nav a {
+  color: #594437;
+  text-decoration: none;
+  margin: 8px;
+  font-size: 14px;
+}
 
-    .hero h1 {
-      font-size: clamp(36px, 6vw, 55px);
-      margin-bottom: 18px;
-    }
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: #ead5cf;
+}
 
-    .hero p {
-      font-size: 17px;
-      margin-bottom: 28px;
-    }
+.hero h1 {
+  font-size: clamp(36px, 6vw, 55px);
+  margin-bottom: 20px;
+}
 
-    .btn {
-      display: inline-block;
-      background: #795844;
-      color: white;
-      padding: 14px 30px;
-      text-decoration: none;
-      border-radius: 4px;
-    }
+.hero p {
+  margin-bottom: 28px;
+  font-size: 17px;
+}
 
-    .section {
-      padding: 60px 7%;
-      text-align: center;
-    }
+.btn {
+  display: inline-block;
+  background: #795844;
+  color: white;
+  padding: 13px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 12px;
+}
 
-    .section h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
+.btn:hover {
+  background: #a47c69;
+}
 
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      margin-top: 35px;
-    }
+.section {
+  padding: 65px 7%;
+  text-align: center;
+}
 
-    .product {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 3px 12px #0000000d;
-    }
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
 
-    .product img {
-      width: 100%;
-      height: 210px;
-      object-fit: cover;
-      border-radius: 5px;
-    }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
 
-    .product h3 {
-      margin: 15px 0 8px;
-    }
+.product {
+  background: white;
+  padding: 18px;
+  border-radius: 9px;
+  box-shadow: 0 3px 12px #00000010;
+}
 
-    .product p {
-      margin-bottom: 12px;
-    }
+.product img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 6px;
+}
 
-    footer {
-      background: #594437;
-      color: white;
-      padding: 30px;
-      text-align: center;
-    }
+.product h3 {
+  margin: 16px 0 10px;
+}
 
-    @media(max-width: 600px) {
-      header {
-        justify-content: center;
-      }
-      nav a {
-        margin: 0 7px;
-      }
-    }
-  </style>
+.product p {
+  line-height: 1.6;
+}
+
+.price {
+  color: #a4775c;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.payment {
+  background: #f1e6d9;
+  padding: 35px 20px;
+  border-radius: 10px;
+  max-width: 650px;
+  margin: auto;
+  line-height: 2;
+}
+
+footer {
+  background: #594437;
+  color: white;
+  padding: 35px 15px;
+  text-align: center;
+  line-height: 2;
+}
+
+footer a {
+  color: #f3d8ce;
+}
+
+@media(max-width: 600px) {
+  header {
+    justify-content: center;
+  }
+  nav {
+    text-align: center;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">The Yarn Atelier</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#shop">Patterns</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">The Yarn Atelier</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Patterns</a>
+    <a href="#payment">Payments</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section class="hero" id="home">
-    <h1>The Art of Every Stitch</h1>
-    <p>Discover beautiful crochet patterns and bring
-       your creativity to life.</p>
-    <a href="#shop" class="btn">Explore Patterns</a>
-  </section>
+<section class="hero" id="home">
+  <h1>The Art of Every Stitch</h1>
+  <p>Discover beautiful crochet patterns.
+     Create something extraordinary.</p>
+  <a href="#shop" class="btn">Explore Our Patterns</a>
+</section>
 
-  <section class="section" id="shop">
-    <h2>Our Crochet Patterns</h2>
-    <p>Find your next beautiful project.</p>
+<section class="section" id="shop">
+  <h2>Explore Our Pattern Collection</h2>
+  <p>Digital crochet patterns for every creative soul.</p>
 
-    <div class="products">
+  <div class="products">
 
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=600"
-             alt="Crochet teddy bear">
-        <h3>Amigurumi Patterns</h3>
-        <p>Beautiful handmade toys.</p>
-        <a href="#contact" class="btn">Explore</a>
-      </div>
-
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600"
-             alt="Flowers">
-        <h3>Flower Patterns</h3>
-        <p>Create beautiful crochet flowers.</p>
-        <a href="#contact" class="btn">Explore</a>
-      </div>
-
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=600"
-             alt="Handmade accessories">
-        <h3>Bag Patterns</h3>
-        <p>Make your own crochet accessories.</p>
-        <a href="#contact" class="btn">Explore</a>
-      </div>
-
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=600"
+      alt="Amigurumi crochet">
+      <h3>Amigurumi Teddy Bears</h3>
+      <p>Adorable crochet toys and teddy bear patterns.</p>
+      <p class="price">Individual pattern pricing</p>
+      <a class="btn" target="_blank"
+      href="https://wa.me/254748136910?text=Hello%20The%20Yarn%20Atelier.%20I%20am%20interested%20in%20your%20teddy%20bear%20patterns.">
+      View Patterns</a>
     </div>
-  </section>
 
-  <section class="section" id="about">
-    <h2>Welcome to The Yarn Atelier</h2>
-    <p>A creative space for crochet lovers.
-       Learn new techniques, explore patterns
-       and create something beautiful.</p>
-  </section>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600"
+      alt="Crochet flowers">
+      <h3>Crochet Flowers</h3>
+      <p>Beautiful roses, bouquets and decorative flowers.</p>
+      <p class="price">Individual pattern pricing</p>
+      <a class="btn" target="_blank"
+      href="https://wa.me/254748136910?text=Hello.%20I%20am%20interested%20in%20your%20crochet%20flower%20patterns.">
+      View Patterns</a>
+    </div>
 
-  <section class="section" id="contact">
-    <h2>Let's Connect</h2>
-    <p>Have questions about our patterns?</p>
-    <p>Email: your-email@example.com</p>
-  </section>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=600"
+      alt="Crochet bags">
+      <h3>Crochet Bags</h3>
+      <p>Stylish handbags, purses and everyday bags.</p>
+      <p class="price">Individual pattern pricing</p>
+      <a class="btn" target="_blank"
+      href="https://wa.me/254748136910?text=Hello.%20I%20am%20interested%20in%20your%20crochet%20bag%20patterns.">
+      View Patterns</a>
+    </div>
 
-  <footer>
-    <p>© 2026 The Yarn Atelier. All rights reserved.</p>
-    <p>The Art of Every Stitch.</p>
-  </footer>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600"
+      alt="Knitted and crochet accessories">
+      <h3>Beanie Patterns</h3>
+      <p>Beautiful hats for adults and children.</p>
+      <p class="price">Individual pattern pricing</p>
+      <a class="btn" target="_blank"
+      href="https://wa.me/254748136910?text=Hello.%20I%20am%20interested%20in%20your%20beanie%20patterns.">
+      View Patterns</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?w=600"
+      alt="Granny square crochet">
+      <h3>Granny Squares</h3>
+      <p>Creative square patterns for bags, blankets and more.</p>
+      <p class="price">Individual pattern pricing</p>
+      <a class="btn" target="_blank"
+      href="https://wa.me/254748136910?text=Hello.%20I%20am%20interested%20in%20your%20granny%20square%20patterns.">
+      View Patterns</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600"
+      alt="Handmade crochet">
+      <h3>Other Crochet Patterns</h3>
+      <p>Discover more creative crochet projects.</p>
+      <p class="price">Individual pattern pricing</p>
+      <a class="btn" target="_blank"
+      href="https://wa.me/254748136910?text=Hello.%20I%20would%20like%20to%20see%20your%20other%20crochet%20patterns.">
+      View Patterns</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="payment">
+  <h2>Payment Information</h2>
+  <div class="payment">
+    <h3>The Yarn Atelier</h3>
+    <p><strong>M-Pesa Buy Goods Till:</strong> 6334630</p>
+    <p>Contact us on WhatsApp to confirm your
+       selected pattern and its price before payment.</p>
+    <a class="btn" target="_blank"
+    href="https://wa.me/254748136910?text=Hello.%20I%20would%20like%20to%20purchase%20a%20crochet%20PDF%20pattern.">
+    Contact Us to Order</a>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Let's Connect</h2>
+  <p>Need help choosing a pattern?</p>
+  <p>WhatsApp: 0748136910</p>
+  <a class="btn" target="_blank"
+  href="https://wa.me/254748136910">
+  Chat With Us</a>
+</section>
+
+<footer>
+  <h3>The Yarn Atelier</h3>
+  <p>The Art of Every Stitch.</p>
+  <p>© 2026 The Yarn Atelier. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
+
